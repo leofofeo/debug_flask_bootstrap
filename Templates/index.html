@@ -1,1 +1,16 @@
 {% extends "bootstrap/base.html" %}
+
+<!-- this part works -->
+
+{% block content %}
+    <h1> Test Content</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ super() }}
+	<h2>adding more text to body</h2>
+
+{% endblock %}
+
+<!-- The blocks are not working.  -->
